@@ -1,0 +1,9 @@
+{
+  "f1": 1.0,
+  "samples": 80000,
+  "features": 80,
+  "model": "GBDT-80k",
+  "normal": 0.0,
+  "syn": 1.0,
+  "c2": 1.0
+}
