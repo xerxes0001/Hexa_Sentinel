@@ -1,0 +1,84 @@
+:root {
+  --bg-primary:    #060a0f;
+  --bg-secondary:  #0a0f1a;
+  --bg-card:       rgba(10, 14, 22, 0.94);
+  --border-subtle: rgba(255, 255, 255, 0.12);
+  --border-mid:    rgba(255, 255, 255, 0.22);
+  --text-primary:  #eef2f7;
+  --text-secondary:#a3aebb;
+  --text-muted:    #7c8697;
+  --accent-red:    #ff2d55;
+  --accent-green:  #00ff88;
+  --accent-blue:   #00bfff;
+  --accent-amber:  #ffd60a;
+  --accent-orange: #ff6b00;
+  --accent-purple: #bf5af2;
+  --font-mono:     'JetBrains Mono', 'Courier New', monospace;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html, body, #root { height: 100%; overflow: hidden; }
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Scrollbars ── */
+::-webkit-scrollbar       { width: 3px; height: 3px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(0,255,136,0.12); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(0,255,136,0.25); }
+
+/* ── Core animations ── */
+@keyframes pulseRing {
+  0%   { transform: scale(0.8); opacity: 0.8; }
+  100% { transform: scale(2.8); opacity: 0; }
+}
+@keyframes tickerScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes dotBounce {
+  0%, 80%, 100% { transform: scale(0.55); opacity: 0.28; }
+  40%           { transform: scale(1);    opacity: 1; }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 6px rgba(255,45,85,0.25); }
+  50%       { box-shadow: 0 0 18px rgba(255,45,85,0.6); }
+}
+@keyframes borderPulse {
+  0%, 100% { border-color: rgba(255,45,85,0.35); }
+  50%       { border-color: rgba(255,45,85,0.85); }
+}
+/* Feature #74 — Skeleton pulse */
+@keyframes skeletonPulse {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 0.9; }
+}
+/* Feature #61 — AI loading shimmer */
+@keyframes aiShimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+/* ── Input/button focus ── */
+button:focus-visible, input:focus-visible {
+  outline: 1px solid rgba(0,191,255,0.5);
+  outline-offset: 2px;
+}
+input  { outline: none; }
+button { outline: none; }
