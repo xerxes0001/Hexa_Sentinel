@@ -1,0 +1,50 @@
+{
+  "name": "hexasentinel",
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "lucide-react": "^0.383.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.160.1",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^6.4.3",
+    "vitest": "^4.1.10"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "description": "HexaSentinel \u2014 Autonomous On-Device Network Threat Intelligence Analyst powered by Qualcomm AI Hub Llama 3.2 3B on Hexagon NPU",
+  "author": "Aniket Anand Khot <khotaniket3006@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/aniket-khot/hexasentinel",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aniket-khot/hexasentinel.git"
+  },
+  "keywords": [
+    "cybersecurity",
+    "qualcomm",
+    "snapdragon",
+    "hexagon-npu",
+    "on-device-ai",
+    "llama",
+    "onnx",
+    "bgp",
+    "network-security",
+       "india"
+  ],
+  "allowScripts": {
+    "esbuild": true
+  }
+} 
