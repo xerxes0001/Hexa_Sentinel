@@ -1,0 +1,11 @@
+# HexaSentinel — Training-only dependencies
+# Install with: pip install -r scripts/train_requirements.txt
+# These are NOT needed for runtime on the HP AI PC.
+
+scikit-learn>=1.4.0
+xgboost>=2.0.0          # preferred; falls back to sklearn GBC if absent
+skl2onnx>=1.16.0        # sklearn → ONNX converter
+onnxmltools>=1.12.0     # helper
+onnxruntime>=1.18.0     # for post-training verification
+numpy>=1.26.0
+pandas>=2.2.0
